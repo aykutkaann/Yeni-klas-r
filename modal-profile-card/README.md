@@ -1,13 +1,6 @@
 
 ---
 
-## 🔗 Live Preview
-
-You can open `index.html` directly in your browser  
-or deploy easily using **GitHub Pages**.
-
----
-
 ## 📌 Purpose of This Project
 
 This project was built to practice:
@@ -23,9 +16,7 @@ This project was built to practice:
 **Aykut Kaan Altundal**  
 Frontend Developer
 
-- Instagram: [your-instagram-link]
-- LinkedIn: [your-linkedin-link]
-- Email: yourmail@gmail.com
+- Email: aykut8112@gmail.com
 
 ---
 
