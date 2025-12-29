@@ -1,0 +1,118 @@
+body {
+  font-family: Arial;
+  padding: 50px;
+  max-height: 100vh;
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#openModal {
+  padding: 40px 80px;
+  background-color: brown;
+  color: white;
+  border: 2px solid salmon;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  font-size: 25px;
+}
+
+#openModal:hover {
+  background-color: salmon;
+  border: 2px solid brown;
+  transform: translateY(-5px);
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 35px;
+  color: #262626;
+  margin-top: 50px;
+}
+img {
+  width: 90px;
+  border-radius: 8px;
+  border: 2px solid salmon;
+  position: relative;
+  justify-content: center;
+}
+.nameImg {
+  display: flex;
+}
+
+hr {
+  border: none;
+  border-top: 6px double #333333;
+  color: #333333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.bio {
+  text-align: center;
+  font-size: 19px;
+}
+.info {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding: 50px;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Modal */
+.modal {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  border-radius: 8px;
+  transform: scale(0.8);
+  transition: 0.3s;
+  position: absolute;
+}
+
+/* Aktif durum */
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay.active .modal {
+  transform: scale(1);
+}
+
+#closeModal {
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  /* Default: mobile */
+  body {
+    font-size: 14px;
+    
+  }
+
+}
